@@ -1,0 +1,32 @@
+.header{
+    background-color: $color-white-four;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @media (min-width:768px){
+        height: 455px;
+        padding-left: 175px;
+        padding-right: 174px;
+
+    }
+
+    &__logo{
+        width: 250px;
+        height: 63px;
+
+        @media (min-width:768px){
+            width: 419px;
+            height: 105px;
+        }
+
+
+    }
+
+
+}
