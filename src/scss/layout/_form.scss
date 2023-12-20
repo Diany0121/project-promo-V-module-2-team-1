@@ -9,13 +9,19 @@
     }
     &__legend{
         display: flex;
-        height: 44px; 
-
-        &--h3{
-            font-family: $font-title;
+        align-items: center;
+        font-size: 18px;
+        &--keyboard{
+            color: $color-dull-orange;            
+        }
+        &--title{
+            font-family: $font-OpenSans;
             font-size: 18px;
             text-transform: uppercase;
             color: $color-gunmetal ;
+        }
+        &--arrowup{
+            color: $color-gunmetal;            
         }
     }
     &__sticker{
@@ -24,17 +30,16 @@
         gap: 7px;       
         
         &--label{
-        font-family: $font-content;
+        font-family: $font-OpenSans;
         font-size: 14px;
         color: $color-dark-gree-blue;
 
         }
         &--input{            
             height: 30px;            
-            font-family: $font-content;
+            font-family: $font-OpenSans;
             font-size: 14px;
-            color: $color-hospital-green;
-            opacity: 0.5;
+            border: 1px solid $color-hospital-green;            
             padding-left: 9px;
         }
         &--file{
