@@ -15,9 +15,22 @@ $color-tomato:#e95626;
 $color-slate: #3e5b65;
 $color-faded-orange: #eab052;
 $color-light-grey-blue: #a0c0cf;
+
 // FONTS
-$font-title: OpenSans-SemiBold;
-$font-content: OpenSans;
-$font-target-subtitle: Montserrat-Regular;
-$font-target-title: Montserrat-Bold;
-$font-createlanding: Merriweather-Black;
+$font-OpenSans: 'Open Sans', sans-serif; 
+$font-Montserrat-Bold: 'Montserrat', sans-serif;
+$font-merriWeather-black: 'Merriweather', serif; 
+
+/* share <i class="fa-solid fa-share-nodes"></i>
+keyboard <i class="fa-regular fa-keyboard"></i>
+design <i class="fa-regular fa-object-ungroup"></i>
+git <i class="fa-brands fa-github-alt" style="color: #114E4E;"></i>
+linkedin <i class="fa-brands fa-linkedin-in" style="color: #114E4E;"></i>
+email <i class="fa-regular fa-envelope" style="color: #114E4E;"></i>
+telefono <i class="fa-solid fa-mobile-screen-button" style="color: #114E4E;"></i>
+reset <i class="fa-light fa-trash-can" style="color: #54585A"></i>
+abierta <i class="fa-solid fa-angle-up" style="color: #54585A;"></i>
+cerrada <i class="fa-solid fa-angle-down" style="color: #54585A;"></i> 
+crear tarjeta <i class="fa-solid fa-id-card"></i>
+*/
+
