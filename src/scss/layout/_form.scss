@@ -9,7 +9,10 @@
     }
     &__legend{
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
+        gap: 10px;
         font-size: 18px;
         &--keyboard{
             color: $color-dull-orange;            
@@ -21,7 +24,11 @@
             color: $color-gunmetal ;
         }
         &--arrowup{
-            color: $color-gunmetal;            
+            color: $color-gunmetal;
+            transform: translateX(145px);   
+            @media (min-width: 768px) {
+                transform: translateX(204px);       
+            }        
         }
     }
     &__sticker{
@@ -44,7 +51,7 @@
         }
         &--file{
             background-color: $color-dull-orange;
-            display: none;
+            // display: none;
         }
         &--div{
             height: 30px;
