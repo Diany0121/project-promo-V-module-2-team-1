@@ -1,63 +1,90 @@
-.fieldset{
+.fieldset {
     display: flex;
     flex-direction: column;
     border: none;
     gap: 20px;
     padding: 20px 20px 20px 20px;
+
     @media (min-width: 768px) {
-        padding: 20px 30px 20px 40px;        
+        padding: 20px 30px 20px 40px;
     }
-    &__legend{
+
+    &__legend {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
         font-size: 18px;
-        &--keyboard{
-            color: $color-dull-orange;            
+
+        &--keyboard {
+            color: $color-dull-orange;
         }
-        &--title{
+
+        &--title {
             font-family: $font-OpenSans;
             font-size: 18px;
             text-transform: uppercase;
             color: $color-gunmetal ;
         }
-        &--arrowup{
+
+        &--arrowup {
             color: $color-gunmetal;
-            transform: translateX(145px);   
+            transform: translateX(145px);
+
             @media (min-width: 768px) {
-                transform: translateX(204px);       
-            }        
+                transform: translateX(204px);
+            }
         }
     }
-    &__sticker{
+
+    &__sticker {
         display: flex;
         flex-direction: column;
-        gap: 7px;       
-        
-        &--label{
-        font-family: $font-OpenSans;
-        font-size: 14px;
-        color: $color-dark-gree-blue;
+        gap: 7px;
 
-        }
-        &--input{            
-            height: 30px;            
+        &--label {
             font-family: $font-OpenSans;
             font-size: 14px;
-            border: 1px solid $color-hospital-green;            
+            color: $color-dark-gree-blue;
+            padding-top: 10px;
+
+        }
+
+        &--input {
+            height: 30px;
+            font-family: $font-OpenSans;
+            font-size: 14px;
+            border: 1px solid $color-hospital-green;
             padding-left: 9px;
         }
-        &--file{
-            background-color: $color-dull-orange;
-            // display: none;
+        &--hidden{
+            display: flex;
+            justify-content: space-between;            
         }
-        &--div{
+        &--butt{
+            background-color: $color-dull-orange;
+            height: 30px;
+            width: 140px;
+            border-radius: 3px;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+            color: $color-white-two;
+            font-family: $font-OpenSans;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 5px;            
+        }
+
+        &--file {
+            background-color: $color-dull-orange;
+            display: none;
+        }
+        &--div {
             height: 30px;
             width: 30px;
             border: 1px solid $color-hospital-green;
         }
+
     }
-    
+
 }
