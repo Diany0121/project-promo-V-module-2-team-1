@@ -1,6 +1,6 @@
 
 .footer{
-    height: 110px;
+    
     position: relative;
     bottom: 0;
     border-top: 1px solid $color-white-three;
@@ -10,36 +10,27 @@
     background-color: $color-white-two;
     padding-top: 18px;
     font-family: $font-OpenSans;
-    background-color: aqua;
+    
 
     @media (min-width:768px){
-        height: 60px;
-        flex-direction: row;
         
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 41px;
+        padding-right: 40px;    
     }
 
     &__awesome{
         color: $color-brownish-grey;
         opacity: 0.5;
         font-size: 1.4rem;
-
-        @media (min-width:768px){  
-            
-        }
-
     }
 
     &__logo{
         width: 103px;
-        margin: 0 auto;
         padding-bottom: 20px ;
         padding-top: 12px;
         }
-        
-        @media (min-width:768px){
-            
-        }
-        
-
+    
  }
     

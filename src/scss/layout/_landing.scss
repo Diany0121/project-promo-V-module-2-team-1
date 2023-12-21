@@ -1,8 +1,138 @@
 .landing{
+    background-color: $color-white-four;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 35.4px;
+
+    @media(min-width:768px){
+        padding-top: 31px;
+
+    }
 
     &__title{
-        
+        font-family: $font-merriWeather-black;
+        color: $color-dull-orange;  
+        text-align: center;
+        font-size: 1.92rem;
+        @media(min-width:768px){
+            font-size: 2.4rem ;
+        }
+    }
+    
+    &__text{
+        width: 264.8px;
+        height: 38.4px;
+        @media(min-width:768px){
+            width: 331px;
+            height: 48px;
+        }
+
+        &--p{
+            font-family: $font-OpenSans;
+            color: $color-dark-gree-blue;
+            text-align: center;
+            font-size: 1.28rem;
+
+            @media(min-width:768px){
+                font-size: 1.6rem;
+
+            }
+        }
     }
 
 
+    &__box{
+        width: 268px;
+        height: 73.8px;
+        border: solid 1.6px rgb(225, 115, 52, 0.21 );
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;           
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        margin-top: 17.8px;
+        margin-bottom:38.6px;
+        @media(min-width:768px){
+            width: 325px;
+            height: 86px;
+            border: solid 2px rgb(225, 115, 52, 0.21 );
+            border-radius: 5px;
+        }
+        
+        &--designicon{
+            color: $color-dull-orange;
+            font-size: 2.24rem;
+            @media(min-width:768px){
+                font-size: 2.8rem;
+            }
+
+            
+
+        }
+        
+        &--fillicon{
+            color: $color-dull-orange;
+            font-size: 2.24rem;
+            @media(min-width:768px){
+                font-size: 2.8rem;
+            }
+            
+
+        }
+        &--shareicon{
+            color: $color-dull-orange;
+            font-size: 2.24rem;
+            @media(min-width:768px){
+                font-size: 2.8rem;
+            }
+           
+
+        }
+
+        &--designp{
+            color: $color-gunmetal;
+            font-size: 1.28rem;
+            font-family: $font-OpenSans;
+            @media(min-width:768px){
+                font-size: 1.6rem;
+            }
+
+        }
+        &--fillp{
+            color: $color-gunmetal;
+            font-size: 1.28rem;
+            font-family: $font-OpenSans;
+            @media(min-width:768px){
+                font-size: 1.6rem;
+            }
+
+        }
+        &--sharep{
+            color: $color-gunmetal;
+            font-size: 1.28rem;
+            font-family: $font-OpenSans;
+            @media(min-width:768px){
+                font-size: 1.6rem;
+            }
+
+        }
+
+    }
+    &__button{
+
+        width: 129px;
+        height: 42px;
+        border-radius: 21px;
+        background-color: $color-dirty-blue;
+        border: none;
+        color: $color-white-two;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        
+    }
 }
