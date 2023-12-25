@@ -27,16 +27,7 @@
             text-transform: uppercase;
             color: $color-gunmetal ;
         }
-
-        &--arrowup {
-            color: $color-gunmetal;
-            transform: translateX(145px);
-
-            @media (min-width: 768px) {
-                transform: translateX(204px);
-            }
-        }
-    }
+}
 
     &__sticker {
         display: flex;
@@ -87,4 +78,15 @@
 
     }
 
+}
+.arrow{
+    color: $color-gunmetal;
+    transform: translateX(145px);
+
+    @media (min-width: 768px) {
+        transform: translateX(204px);
+    }
+}
+.hidden {
+    display: none;
 }

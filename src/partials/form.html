@@ -2,9 +2,12 @@
     <section class="fieldset__legend">
         <i class="fa-regular fa-keyboard fieldset__legend--keyboard"></i>
         <h3 class="fieldset__legend--title">Rellena</h3>
-        <i class="fa-solid fa-angle-up fieldset__legend--arrowup" style="color: #54585A;"></i>
+        <div class="icon">
+            <i class="fa-solid fa-angle-up fieldset__legend--arrowup arrow" style="color: #54585A;"></i>
+            <i class="fa-solid fa-angle-down fieldset__legend--arrowDown arrow" style="color: #54585A;"></i>
+        </div>
     </section>
-    <div>
+    <div class="boxToBeHidden">
         <div class="fieldset__sticker">
             <label class="fieldset__sticker--label" for="name">Nombre completo</label>
             <input class="fieldset__sticker--input" id="name" placeholder="Ej: Sally Jill" type="text">
@@ -19,8 +22,7 @@
                 <div class="fieldset__sticker--butt ">Añadir imagen</div>
                 <input class="fieldset__sticker--file" type="file" id="file">
                 <div class="fieldset__sticker--div"></div>
-            </label>
-            
+            </label>          
 
         </div>
         <div class="fieldset__sticker">
