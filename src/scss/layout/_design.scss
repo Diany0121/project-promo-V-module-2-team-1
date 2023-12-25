@@ -1,10 +1,254 @@
-.cards{
-    width: 100%;
-    height: 460px;
-    background-color: $color-dirty-blue; 
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#bfcdd0, #dde9ed);
+  gap: 20px;
 
-    &__botton{
-    
+  &__button {
+    width: 75px;
+    height: 30px;
+    font-family: $font-OpenSans;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-gunmetal;
+    border-radius: 15px;
+    border: 1px solid $color-white-two;
+    margin-top: 40px;
+    margin-right: 160px;
+    background-color: initial;
+
+    &--icon {
+      font-size: 12px;
+    }
+  }
+}
+@media (min-width: 768px){
+}
+
+.design {
+  justify-content: center;
+  width: 240px;
+  height: 330px;
+  box-shadow: 0 1px 10px 0 rgb(109, 109, 109),
+    0 1px 3px 0 rgba(80, 80, 80, 0.35);
+  border-radius: 2px;
+  background-color: $color-white-two;
+  /*margin-top: 30px;*/
+  /*margin-left: 40px;*/
+  margin-bottom: 40px;
+
+  &__float {
+    border-left: 5px solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    &--name {
+      font-family: $font-Montserrat-Bold;
+      font-size: 18px;
+      line-height: 1.25;
+      padding-left: 20px;
     }
 
+    &--job {
+      font-family: Montserrat;
+      font-size: 16px;
+      line-height: 1.11;
+      padding-left: 20px;
+      padding-top: 4px;
+    }
+  }
+
+  &__img {
+    background-image: url("../images/imgCards.jpg");
+    width: 240px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.nav {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &--items {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 16px;
+      border: 2px solid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--phone,
+    &--email,
+    &--linkedl,
+    &--git {
+      font-size: 18px;
+    }
+  }
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 20px;
+  border-bottom: 1px solid $color-white-three;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+
+  &__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: $font-OpenSans;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &--keyboard {
+      color: $color-dull-orange;
+    }
+
+    &--title {
+      font-family: $font-OpenSans;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-gunmetal;
+    }
+  }
+}
+
+.form__design--colors {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 12px;
+}
+
+.form__design--title {
+  font-family: $font-OpenSans;
+  text-transform: uppercase;
+  color: $color-gunmetal;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.form__design {
+  display: flex;
+
+  &--input {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+  }
+
+  &--boxColor {
+    width: 30px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+  &--p1c1 {
+    background-color: $color-dark-gree-blue;
+  }
+  &--p1c2 {
+    background-color: $color-dirty-blue;
+  }
+  &--p1c3 {
+    background-color: $color-hospital-green;
+  }
+  &--p2c1 {
+    background-color: $color-dried-blood;
+  }
+  &--p2c2 {
+    background-color: $color-rusty-red;
+  }
+  &--p2c3 {
+    background-color: $color-tomato;
+  }
+  &--p3c1 {
+    background-color: $color-slate;
+  }
+  &--p3c2 {
+    background-color: $color-faded-orange;
+  }
+  &--p3c3 {
+    background-color: $color-light-grey-blue;
+  }
+}
+
+/*Colores*/
+.paletteOne {
+  .design__float {
+    color: $color-dirty-blue;
+  }
+  .design__float--name {
+    color: $color-dark-gree-blue;
+  }
+  .design__float--job {
+    color: $color-gunmetal;
+  }
+  .nav__icon--items {
+    color: $color-hospital-green;
+  }
+  .nav__icon--phone,
+  .nav__icon--email,
+  .nav__icon--linkedl,
+  .nav__icon--git {
+    color: $color-dark-gree-blue;
+  }
+}
+.paletteTwo {
+  .design__float {
+    color: $color-rusty-red;
+  }
+  .design__float--name {
+    color: $color-dried-blood;
+  }
+  .design__float--job {
+    color: $color-gunmetal;
+  }
+  .nav__icon--items {
+    color: $color-tomato;
+  }
+  .nav__icon--phone,
+  .nav__icon--email,
+  .nav__icon--linkedl,
+  .nav__icon--git {
+    color: $color-dried-blood;
+  }
+}
+.paletteThree {
+  .design__float {
+    color: $color-faded-orange;
+  }
+  .design__float--name {
+    color: $color-slate;
+  }
+  .design__float--job {
+    color: $color-gunmetal;
+  }
+  .nav__icon--items {
+    color: $color-light-grey-blue;
+  }
+  .nav__icon--phone,
+  .nav__icon--email,
+  .nav__icon--linkedl,
+  .nav__icon--git {
+    color: $color-slate;
+  }
 }
