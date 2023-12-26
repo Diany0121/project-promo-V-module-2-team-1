@@ -137,9 +137,9 @@
         text-decoration: none;
         text-align: center;
         padding-top: 10px;
-        
+
+        &:hover{
+            background-color: $color-dull-orange;  
         }
-       
-        
-    
+    } 
 }

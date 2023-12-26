@@ -1,6 +1,5 @@
 .header{
     background-color: $color-white-four;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +23,18 @@
             width: 419px;
             height: 105px;
         }
+    }
+}
 
+
+.header2{
+    
+    background-color: $color-white-two;
+
+    &__logo2{
+        width: 201px;
+        height: 50px;
+        padding-bottom: 30px ;
 
     }
 
