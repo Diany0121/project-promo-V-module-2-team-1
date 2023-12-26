@@ -1,16 +1,21 @@
 
 // ARROW
-const icon = document.querySelector('.js-iconForm');
-const arrowUp = document.querySelector('.fieldset__legend--arrowup');
-const arrowDown = document.querySelector('.fieldset__legend--arrowDown');
-const box = document.querySelector('.boxToBeHidden');
-arrowDown.classList.add('hidden');
-function handleClick() {    
+const iconForm = document.querySelector('.js-iconForm');
+const arrowUpForm = document.querySelector('.fieldset__legend--arrowupForm');
+const arrowDownForm = document.querySelector('.fieldset__legend--arrowDownForm');
+const boxForm = document.querySelector('.boxToBeHidden');
+arrowDownForm.classList.add('hidden');
+function handleClick(box, arrowUp, arrowDown) {    
     box.classList.toggle('hidden'); 
     arrowUp.classList.toggle('hidden');
     arrowDown.classList.toggle('hidden');  
 };
-icon.addEventListener('click', handleClick);
+iconForm.addEventListener('click', handleClick(boxForm, arrowUpForm, arrowDownForm));
+
+// CREAR TARJETA
+// const buttonCard = document.querySelector('.js-buttonCreate');
+// const nameCard = document.getElementById('name');
+// console.Log(nameCard);
 
 //AÑADIR NOMBRE
 // inputName.addEventListener("input", () => {
