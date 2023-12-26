@@ -1,0 +1,41 @@
+<fieldset class="fieldset">
+    <section class="fieldset__legend">
+        <i class="fa-regular fa-keyboard fieldset__legend--keyboard"></i>
+        <h3 class="fieldset__legend--title">Rellena</h3>
+        <div class="icon">
+            <i class="fa-solid fa-angle-up fieldset__legend--arrowup arrow" style="color: #54585A;"></i>
+            <i class="fa-solid fa-angle-down fieldset__legend--arrowDown arrow" style="color: #54585A;"></i>
+        </div>
+    </section>
+    <div class="boxToBeHidden">
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="name">Nombre completo</label>
+            <input class="fieldset__sticker--input" id="name" name="name" placeholder="Ej: Sally Jill" type="text">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="job">Puesto</label>
+            <input class="fieldset__sticker--input" id="job" name="job" placeholder="Ej: Front-end unicorn" type="text">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="file">Imagen de perfil</label>
+            <label class="fieldset__sticker--hidden" for="file">
+                <div class="fieldset__sticker--butt ">Añadir imagen</div>
+                <input class="fieldset__sticker--file" name="picture" type="file" id="file">
+                <div class="fieldset__sticker--div"></div>
+            </label>          
+
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="email">Email</label>
+            <input class="fieldset__sticker--input" id="email" name="email" placeholder="Ej: sally.hill@gmail.com" type="email">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="phone">Teléfono</label>
+            <input class="fieldset__sticker--input" id="phone" name="phone" placeholder="Ej: 555-55-55-55" type="tel">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="gitHub">GitHub</label>
+            <input class="fieldset__sticker--input" id="gitHub" name="gitHub" placeholder="Ej: @sally-hill" type="text">
+        </div>
+    </div>
+</fieldset>
