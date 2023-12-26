@@ -18,6 +18,7 @@
     margin-top: 40px;
     margin-right: 160px;
     background-color: initial;
+    cursor: pointer;
 
     &--icon {
       font-size: 12px;
@@ -43,11 +44,14 @@
     border-left: 5px solid;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: $color-brownish-grey;
+
     &--name {
       font-family: $font-Montserrat-Bold;
       font-size: 18px;
       line-height: 1.25;
       padding-left: 20px;
+      color: $color-brownish-grey;
     }
 
     &--job {
@@ -56,6 +60,7 @@
       line-height: 1.11;
       padding-left: 20px;
       padding-top: 4px;
+      color: $color-brownish-grey;
     }
   }
 
@@ -88,6 +93,7 @@
       border: 2px solid;
       align-items: center;
       justify-content: center;
+      color: $color-brownish-grey;
     }
 
     &--phone,
@@ -95,6 +101,7 @@
     &--linkedl,
     &--git {
       font-size: 18px;
+      color: $color-brownish-grey;
     }
   }
 }
