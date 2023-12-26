@@ -1,34 +1,4 @@
 .fieldset {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    gap: 20px;
-    padding: 20px 20px 20px 20px;
-
-    @media (min-width: 768px) {
-        padding: 20px 30px 20px 40px;
-    }
-
-    &__legend {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-        font-size: 18px;
-
-        &--keyboard {
-            color: $color-dull-orange;
-        }
-
-        &--title {
-            font-family: $font-OpenSans;
-            font-size: 18px;
-            text-transform: uppercase;
-            color: $color-gunmetal ;
-        }
-}
-
     &__sticker {
         display: flex;
         flex-direction: column;
@@ -78,14 +48,6 @@
 
     }
 
-}
-.arrow{
-    color: $color-gunmetal;
-    transform: translateX(145px);
-
-    @media (min-width: 768px) {
-        transform: translateX(204px);
-    }
 }
 .hidden {
     display: none;

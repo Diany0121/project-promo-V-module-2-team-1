@@ -1,40 +1,4 @@
 .fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-//   width: 300px;
-//   gap: 20px;
-  border-bottom: 1.5px solid $color-white-three;
-  margin: 20px;
-
-  &__legend {
-    display: flex;
-    flex-direction: row;
-    // justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.8rem;
-    &--keyboard {
-      color: $color-dull-orange;
-      font-size: 16px;
-    }
-    &--title {
-      font-family: $font-OpenSans;
-      font-size: 1.3rem;;
-      text-transform: uppercase;
-      color: $color-gunmetal;
-    }
-    &--arrowup {
-      color: $color-gunmetal;
-    //   transform: translate(100px);
-    position: absolute;
-    right: 0;
-    }
-  }
-
   &__boxcontent {
     display: flex;
     flex-direction: column;
