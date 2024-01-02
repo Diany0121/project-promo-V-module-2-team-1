@@ -5,6 +5,12 @@
     background: linear-gradient(#bfcdd0, #dde9ed);
     gap: 20px;
 
+    @media(min-width:768px){
+        width: 70vw;
+        margin: 20px 40px 20px 0 ;
+        border-radius: 6px;
+      }
+
     &__button {
         width: 75px;
         height: 30px;
