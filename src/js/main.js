@@ -2,6 +2,7 @@
 import './design.js';
 import './form.js';
 import './share.js';
+import './buttonCreate.js';
 
 // RESET
 
