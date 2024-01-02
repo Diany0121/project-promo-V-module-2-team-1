@@ -1,25 +1,22 @@
-/*
-
-window.onscroll = function(){
-    if (document.window.scrollTop>0){
-        document.getElementsByClassName('header2').style.position = 'fixed';
-    } else {
-        document.getElementsByClassName('header2').style.position = 'unset';
-    }
-};*/
 
 const header = document.querySelector('.js-header');
-const btn = document.querySelector('.js-buton');
+const btn = document.querySelector('.js-buton'); //buton esta en landing
 
-btn.addEventListener('click', () => {
-    header.classList.toggle ('header2');
-    header.classList.toggle ('header');
-});
+function handleClick () {
+
+    if( estoy en landing){
+        header.classList.add ('header');
+    }
+    else { //si estoy en las otras paginas 
+        header.classList.add ('header2');
+    }
+
+};
+
+btn.addEventListener('click', handleclick)
 
 
-/*if{
-    btn.addEventListener ('click', () =>{
-        classList.toggle ('header2')
-    })
-}*/
+
+
+
 

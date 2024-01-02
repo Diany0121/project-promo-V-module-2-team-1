@@ -30,6 +30,9 @@
 .header2{
     
     background-color: $color-white-two;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
     &__logo2{
         width: 201px;
