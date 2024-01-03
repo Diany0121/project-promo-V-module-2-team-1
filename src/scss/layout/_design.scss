@@ -6,8 +6,11 @@
   border-bottom: 1px solid $color-white-three;
   margin: 20px;
   padding-bottom: 10px;
- 
+  @media(min-width:768px){
+    width: 30vw;
 
+  }
+ 
   &__legend {
     display: flex;
     justify-content: space-between;
