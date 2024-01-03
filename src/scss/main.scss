@@ -12,7 +12,7 @@
 @import "layout/picGrey";
 
 .second-main {
-    min-height: 70%;
+    min-height: 70vh;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
