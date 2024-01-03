@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    /*padding: 20px;*/
     
 
     &--buttonone {
@@ -49,10 +49,10 @@
       font-weight: bold;
       margin-top: 15px;
 
-      @media (min-width:768px) {
+      /*@media (min-width:768px) {
         font-size: 1.3rem;
         
-      }
+      }*/
 
     }
 
