@@ -1,40 +1,43 @@
-'use strict';
-
-// const resetButton = document.querySelector('.');
-// function resetForm() {
-//     const holeForm = document.querySelector('.holeForm');
-//     holeForm.reset();
-// };
-// resetButton.addEventListener('click', resetForm);
-
-
+"use strict";
 
 // ARROW
-const iconDesign = document.querySelector('.js-iconDesign');
-const arrowUpDesign = document.querySelector('.fieldset__legend--arrowupDesign');
-const arrowDownDesign = document.querySelector('.fieldset__legend--arrowDownDesign');
-const boxDesign = document.querySelector('.form__design--colors');
-arrowDownDesign.classList.add('hidden');
-function handleClickDesign() {    
-    boxDesign.classList.toggle('hidden'); 
-    arrowUpDesign.classList.toggle('hidden');
-    arrowDownDesign.classList.toggle('hidden');  
-};
-iconDesign.addEventListener('click', handleClickDesign);
+const iconDesign = document.querySelector(".js-iconDesign");
+const arrowUpDesign = document.querySelector(
+  ".fieldset__legend--arrowupDesign"
+);
+const arrowDownDesign = document.querySelector(
+  ".fieldset__legend--arrowDownDesign"
+);
+const boxDesign = document.querySelector(".form__design--colors");
+arrowDownDesign.classList.add("hidden");
+function handleClickDesign() {
+  boxDesign.classList.toggle("hidden");
+  arrowUpDesign.classList.toggle("hidden");
+  arrowDownDesign.classList.toggle("hidden");
+}
+iconDesign.addEventListener("click", handleClickDesign);
 
+// Variables para los elementos de HTML de la tarjeta
+const resetButton = document.querySelector(".js_reset_btn");
+//const profileName = document.querySelector('.js-name');
+//const profileJob = document.querySelector('.js-job');
+const articleDesign = document.querySelector(".js-designCards");
 
+// Variables para los elementos del HTML de la tarjeta, la parte de Diseña
+const palettes = document.querySelector(".js-designPalette");
+const paletteRadiusOne = document.querySelector(".js-paletteOne");
+const paletteRadiusTwo = document.querySelector(".js-paletteTwo");
+const paletteRadiusThree = document.querySelector(".js-paletteThree");
 
-//const paleteOne = document.querySelector('.js-paleteOne');
-//const cardDesign = document.querySelector('.js-design');
+function handleClickPallete() {
+  articleDesign.classList.remove("paletteOne");
+  articleDesign.classList.remove("paletteTwo");
+  articleDesign.classList.remove("paletteThree");
+}
+handleClickPallete();
 
-
-//function handleClick(){
-    //cardDesign.classList.toggle('paletteOne');
-//};
-//paleteOne.addEventListener('click', handleClick);
-
-//paleteOne.removeEventListener('click', () => {
-    //cardDesign.classList.add("paletteOne");
-//});
-
-
+function resetForm() {
+  const holeForm = document.querySelector(".holeForm");
+  holeForm.reset();
+}
+resetButton.addEventListener("click", resetForm);
