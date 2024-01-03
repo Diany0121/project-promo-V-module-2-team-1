@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     
 
     &--buttonone {
@@ -19,7 +18,7 @@
         text-align: center;
         width: 199px;
         height: 47px;
-        padding: 12px;
+        padding: 15px;
         border-radius: 10px;
         border: none;
     
@@ -73,3 +72,11 @@
   }
 
 }
+
+.backgroundorange{
+  background-color: $color-dull-orange;
+}
+.backgroundgrey{
+  background-color:$color-button-card;
+}
+
