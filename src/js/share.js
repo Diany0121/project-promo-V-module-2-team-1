@@ -19,7 +19,8 @@ iconShare.addEventListener('click', handleClickShare);
 
 createdCard.classList.add('hidden');
 
-buttonShare.addEventListener('click', function() {
+buttonShare.addEventListener('click', function(event) {
+  event.preventDefault();
   buttonShare.classList.toggle('backgroundorange');
   buttonShare.classList.toggle('backgroundgrey');
   createdCard.classList.toggle('hidden');
