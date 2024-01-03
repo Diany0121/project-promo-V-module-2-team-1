@@ -14,5 +14,44 @@ function handleClick(box, arrowUp, arrowDown) {
 iconForm.addEventListener('click', function() {
     handleClick(boxForm, arrowUpForm, arrowDownForm);
 });
+ // INTRODUCIR DATOS
+const nameCard = document.querySelector('.js-name-card');
+const nameForm = document.querySelector('.js-name-form');
+const jobCard = document.querySelector('.js-job-card');
+const jobForm = document.querySelector('.js-job-form');
+// const imgCard = document.querySelector('.js-img-card');
+// const imgForm = document.querySelector('.js-img-form');
+function writeName () {
+    const nameFormValue = nameForm.value;
+    nameCard.innerHTML= nameFormValue;
+}
+function writeJob () {
+    const jobFormValue = jobForm.value;
+    jobCard.innerHTML = jobFormValue;
+}
+// function writeImg () {
+//     const imgFormValue = imgForm.value;
+//     imgCard = imgFormValue;
+
+// }
+nameForm.addEventListener('input', writeName);
+jobForm.addEventListener('input', writeJob);
+// imgForm.addEventListener('change', writeImg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
