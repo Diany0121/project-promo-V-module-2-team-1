@@ -9,16 +9,12 @@
     padding-right: 35px;
 
     @media (min-width:768px){
-        
         padding-left: 175px;
         padding-right: 174px;
-
     }
-
     &__logo{
         width: 250px;
-        height: 63px;
-
+        height: 63px; 
         @media (min-width:768px){
             width: 419px;
             height: 105px;
@@ -26,20 +22,25 @@
     }
 }
 
-
 .header2{
-    
     background-color: $color-white-two;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 
+    @media (min-width:768px){
+        flex-direction: row;
+        justify-content: flex-start;
+    }    
     &__logo2{
         width: 201px;
         height: 50px;
-        padding-bottom: 30px ;
-
+        margin: 31px 79px 30px 40px;
+        @media (min-width:768px){
+            width: 201px;
+            height: 50px;  
+        }
     }
-
-
 }
