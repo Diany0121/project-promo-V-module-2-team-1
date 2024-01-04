@@ -1,19 +1,56 @@
 
 // ARROW
-const icon = document.querySelector('.js-iconForm');
-const arrowUp = document.querySelector('.fieldset__legend--arrowup');
-const arrowDown = document.querySelector('.fieldset__legend--arrowDown');
-const box = document.querySelector('.boxToBeHidden');
-arrowDown.classList.add('hidden');
-function handleClick() {    
+const iconForm = document.querySelector('.js-iconForm');
+const arrowUpForm = document.querySelector('.fieldset__legend--arrowupForm');
+const arrowDownForm = document.querySelector('.fieldset__legend--arrowDownForm');
+const boxForm = document.querySelector('.boxToBeHidden');
+arrowDownForm.classList.add('hidden');
+function handleClick(box, arrowUp, arrowDown) {    
     box.classList.toggle('hidden'); 
     arrowUp.classList.toggle('hidden');
     arrowDown.classList.toggle('hidden');  
 };
-icon.addEventListener('click', handleClick);
+iconForm.addEventListener('click', function() {
+    handleClick(boxForm, arrowUpForm, arrowDownForm);
+});
+ // INTRODUCIR DATOS
+const nameCard = document.querySelector('.js-name-card');
+const nameForm = document.querySelector('.js-name-form');
+const jobCard = document.querySelector('.js-job-card');
+const jobForm = document.querySelector('.js-job-form');
+// const imgCard = document.querySelector('.js-img-card');
+// const imgForm = document.querySelector('.js-img-form');
+function writeName () {
+    const nameFormValue = nameForm.value;
+    nameCard.innerHTML= nameFormValue;
+}
+function writeJob () {
+    const jobFormValue = jobForm.value;
+    jobCard.innerHTML = jobFormValue;
+}
+// function writeImg () {
+//     const imgFormValue = imgForm.value;
+//     imgCard = imgFormValue;
 
-//AÑADIR NOMBRE
-// inputName.addEventListener("input", () => {
-//     previewName.innerHTML = inputName.value;
-//     previewJob.innerHTML = inputJob.value;
-// });
+// }
+nameForm.addEventListener('input', writeName);
+jobForm.addEventListener('input', writeJob);
+// imgForm.addEventListener('change', writeImg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
