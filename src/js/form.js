@@ -18,6 +18,7 @@ const nameCard = document.querySelector('.js-name-card');
 const nameForm = document.querySelector('.js-name-form');
 const jobCard = document.querySelector('.js-job-card');
 const jobForm = document.querySelector('.js-job-form');
+const form = document.querySelector('.js-form');
 // const imgCard = document.querySelector('.js-img-card');
 // const imgForm = document.querySelector('.js-img-form');
 function writeName (event) {
@@ -53,7 +54,7 @@ const dataForm = {
   photo: "",
 };
 
-pepino.addEventListener('input', )
+// form.addEventListener('input', handleForm);
 
 
 

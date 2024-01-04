@@ -19,9 +19,10 @@ iconDesign.addEventListener("click", handleClickDesign);
 
 // Variables para los elementos de HTML de la tarjeta
 const resetButton = document.querySelector(".js_reset_btn");
-//const profileName = document.querySelector('.js-name');
-//const profileJob = document.querySelector('.js-job');
+// const profileName = document.querySelector('.js-name');
+// const profileJob = document.querySelector('.js-job');
 const articleDesign = document.querySelector(".js-designCards");
+const wholeForm = document.querySelector(".wholeForm");
 
 // Variables para los elementos del HTML de la tarjeta, la parte de Diseña
 const palettes = document.querySelector(".js-designPalette");
@@ -41,8 +42,9 @@ handleClickPallete();
 
 
 function resetForm() {
-  const holeForm = document.querySelector(".holeForm");
-  holeForm.reset();
+  
+  wholeForm.reset();
+  articleDesign.reset();
 }
 resetButton.addEventListener("click", resetForm);
 
