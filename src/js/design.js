@@ -41,3 +41,18 @@ function resetForm() {
   holeForm.reset();
 }
 resetButton.addEventListener("click", resetForm);
+
+//nombre preview
+
+const profileName = document.querySelector('.js-name');
+const profileJob = document.querySelector('.js-job');
+
+const previewName = document.querySelector('.js-preview_name');
+const previewJob = document.querySelector('.js-preview_job');
+
+profileName.addEventListener('input', () =>{
+  previewName.innerHTML = profileName.value;
+});
+profileJob.addEventListener('input', () =>{
+  previewJob.innerHTML = profileJob.value;
+});
