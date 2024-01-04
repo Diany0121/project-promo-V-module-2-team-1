@@ -29,12 +29,16 @@ const paletteRadiusOne = document.querySelector(".js-paletteOne");
 const paletteRadiusTwo = document.querySelector(".js-paletteTwo");
 const paletteRadiusThree = document.querySelector(".js-paletteThree");
 
-function handleClickPallete() {
-  articleDesign.classList.remove("paletteOne");
-  articleDesign.classList.remove("paletteTwo");
-  articleDesign.classList.remove("paletteThree");
+function handleClickPallete(event) {
+  event.preventDefault();
+  articleDesign.classList.toggle("paletteOne");
+  articleDesign.classList.add("paletteTwo");
+  articleDesign.classList.add("paletteThree");
 }
 handleClickPallete();
+
+paletteRadiusOne.addEventListener('click', handleClickPallete); 
+
 
 function resetForm() {
   const holeForm = document.querySelector(".holeForm");
