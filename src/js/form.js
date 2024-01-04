@@ -28,14 +28,10 @@ function writeJob () {
     const jobFormValue = jobForm.value;
     jobCard.innerHTML = jobFormValue;
 }
-// function writeImg () {
-//     const imgFormValue = imgForm.value;
-//     imgCard = imgFormValue;
 
-// }
 nameForm.addEventListener('input', writeName);
 jobForm.addEventListener('input', writeJob);
-// imgForm.addEventListener('change', writeImg);
+
 
 
 
