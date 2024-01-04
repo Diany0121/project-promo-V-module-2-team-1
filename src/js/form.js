@@ -10,7 +10,6 @@ function handleClick(box, arrowUp, arrowDown) {
     arrowUp.classList.toggle('hidden');
     arrowDown.classList.toggle('hidden');  
 };
-// iconForm.addEventListener('click', handleClick(boxForm, arrowUpForm, arrowDownForm));
 iconForm.addEventListener('click', function() {
     handleClick(boxForm, arrowUpForm, arrowDownForm);
 });
