@@ -20,17 +20,42 @@ const jobCard = document.querySelector('.js-job-card');
 const jobForm = document.querySelector('.js-job-form');
 // const imgCard = document.querySelector('.js-img-card');
 // const imgForm = document.querySelector('.js-img-form');
-function writeName () {
+function writeName (event) {
+    event.preventDefault();
     const nameFormValue = nameForm.value;
-    nameCard.innerHTML= nameFormValue;
-}
-function writeJob () {
+    if (nameFormValue === '' ){
+        nameCard.innerHTML = 'Nombre Apellido'; 
+    } else {
+        nameCard.innerHTML= nameFormValue;
+    };
+};
+function writeJob (event) {
+    event.preventDefault();
     const jobFormValue = jobForm.value;
-    jobCard.innerHTML = jobFormValue;
-}
+    if (jobFormValue === '' ){
+        jobCard.innerHTML= 'Front-end developer';
+    } else {
+        jobCard.innerHTML = jobFormValue;
+    }
+};
 
 nameForm.addEventListener('input', writeName);
 jobForm.addEventListener('input', writeJob);
+
+const dataForm = {
+  palette: 1,
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  github: "",
+  photo: "",
+};
+
+pepino.addEventListener('input', )
+
+
 
 
 

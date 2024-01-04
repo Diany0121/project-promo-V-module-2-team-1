@@ -29,15 +29,15 @@ const paletteRadiusOne = document.querySelector(".js-paletteOne");
 const paletteRadiusTwo = document.querySelector(".js-paletteTwo");
 const paletteRadiusThree = document.querySelector(".js-paletteThree");
 
-function handleClickPallete(event) {
-  event.preventDefault();
+function handleClickPallete() {
+  //event.preventDefault();
   articleDesign.classList.toggle("paletteOne");
   articleDesign.classList.add("paletteTwo");
   articleDesign.classList.add("paletteThree");
 }
 handleClickPallete();
 
-paletteRadiusOne.addEventListener('click', handleClickPallete); 
+//paletteRadiusOne.addEventListener('click', handleClickPallete); 
 
 
 function resetForm() {
