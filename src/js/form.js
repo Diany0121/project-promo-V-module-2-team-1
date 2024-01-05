@@ -25,7 +25,7 @@ const form = document.querySelector('.js-form');
 
 // ESTO ES PARA TENER LOS DATOS Q METE EL USUARIO EN EL OBJETO QUE LUEGO IRA A LA API
 const dataForm = {
-    palette: ,
+    palette: 1,
     name: "",
     job: "",
     phone: "",
@@ -65,6 +65,7 @@ function writeJob (event) {
         jobCard.innerHTML = jobFormValue;
     }
 };
+
 
 nameForm.addEventListener('input', writeName);
 jobForm.addEventListener('input', writeJob);

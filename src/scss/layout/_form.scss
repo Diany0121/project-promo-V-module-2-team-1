@@ -19,7 +19,7 @@
             border: 1px solid $color-hospital-green;
             padding-left: 9px;
         }
-        &--hidden{
+        &--addImg{
             display: flex;
             justify-content: space-between;            
         }
@@ -37,13 +37,13 @@
         }
 
         &--file {
-            background-color: $color-dull-orange;
             display: none;
         }
         &--div {
             height: 30px;
             width: 30px;
             border: 1px solid $color-hospital-green;
+            background-size: cover;
         }
 
     }
