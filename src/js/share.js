@@ -5,7 +5,7 @@ const arrowDownShare = document.querySelector(
   ".fieldset__legend--arrowDownShare"
 );
 const boxShare = document.querySelector(".fieldset__boxcontent");
-const buttonShare = document.querySelector(".js-buttonone");
+const buttonShare = document.querySelector(".js-buttoncreate");
 const createdCard = document.querySelector(".js-createdcard");
 
 arrowDownShare.classList.add("hidden");
@@ -16,12 +16,16 @@ function handleClickShare() {
 }
 iconShare.addEventListener("click", handleClickShare);
 
-// boton naranja/gris y ocualtar seccion
+//boton naranja/gris y ocualtar seccion
 
 createdCard.classList.add("hidden");
 
-buttonShare.addEventListener("click", function (event) {
-  event.preventDefault();
+ function handleclickbutton (event) {
+   event.preventDefault();
+   createdCard.classList.toggle("hidden");
   buttonShare.classList.toggle("backgroundgrey");
-  createdCard.classList.toggle("hidden");
-});
+  
+};
+
+buttonShare.addEventListener("click", handleclickbutton);
+
