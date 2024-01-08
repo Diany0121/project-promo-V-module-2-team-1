@@ -28,20 +28,28 @@ const paletteRadiusThree = document.querySelector(".js-paletteThree");
 
 
 function handleClickPaletteOne () {
-  articleDesign.classList.toggle('paletteOne');
+  articleDesign.classList.add('paletteOne');
+  articleDesign.classList.remove('paletteTwo');
+  articleDesign.classList.remove('paletteThree');
 };
 
 function handleClickPaletteTwo (event){
-  articleDesign.classList.toggle('paletteTwo');
+  articleDesign.classList.add('paletteTwo');
+  articleDesign.classList.remove('paletteOne');
+  articleDesign.classList.remove('paletteThree');
 };
 
 function handleClickPaletteThree () {
-  articleDesign.classList.toggle('paletteThree');
+  articleDesign.classList.add('paletteThree');
+  articleDesign.classList.remove('paletteOne');
+  articleDesign.classList.remove('paletteTwo');
 };
 
 paletteRadiusOne.addEventListener('click', handleClickPaletteOne);
 paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
+
+
 
 
 
