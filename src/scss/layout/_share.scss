@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    
 
     &--buttonone {
       background-color: $color-dull-orange;
@@ -46,9 +48,11 @@
       font-weight: bold;
       margin-top: 15px;
 
-      @media (min-width: 768px) {
+      @media (min-width:768px) {
         font-size: 1.3rem;
+        
       }
+
     }
 
     &--buttontwo {
