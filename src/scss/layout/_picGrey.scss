@@ -35,7 +35,6 @@
 
 
 .design {
-    
     justify-content: center;
     //width: 240px;
     //height: 330px;
@@ -56,6 +55,7 @@
         &--name {
             font-family: $font-Montserrat-Bold;
             font-size: 18px;
+            width: 230px; // este width para que no salga del tamaño de la tarjeta
             line-height: 1.25;
             padding-left: 20px;
             color: $color-brownish-grey;
