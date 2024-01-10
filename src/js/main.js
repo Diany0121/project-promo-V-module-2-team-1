@@ -1,7 +1,6 @@
 import './design.js';
 import './form.js';
 import './share.js';
-import './buttonCreate.js';
 import './get_avatar.js';
 import './linkNav.js';
 

@@ -47,13 +47,17 @@ paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
 
 
-
-
-
-function resetForm() {
+function resetCard() {
+  articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
+  //dataForm[inputId] = event.target.value;
   
-  wholeForm.reset();
-  articleDesign.reset();
 }
-resetButton.addEventListener("click", resetForm);
+
+
+function reset() {
+
+  wholeForm.reset();
+  resetCard();
+}
+resetButton.addEventListener("click", reset);
 
