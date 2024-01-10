@@ -29,20 +29,17 @@ const paletteRadiusThree = document.querySelector(".js-paletteThree");
 
 function handleClickPaletteOne () {
   articleDesign.classList.add('paletteOne');
-  articleDesign.classList.remove('paletteTwo');
-  articleDesign.classList.remove('paletteThree');
+  articleDesign.classList.remove('paletteTwo','paletteThree');
 };
 
 function handleClickPaletteTwo (event){
   articleDesign.classList.add('paletteTwo');
-  articleDesign.classList.remove('paletteOne');
-  articleDesign.classList.remove('paletteThree');
+  articleDesign.classList.remove('paletteOne', 'paletteThree');
 };
 
 function handleClickPaletteThree () {
   articleDesign.classList.add('paletteThree');
-  articleDesign.classList.remove('paletteOne');
-  articleDesign.classList.remove('paletteTwo');
+  articleDesign.classList.remove('paletteOne', 'paletteTwo');
 };
 
 paletteRadiusOne.addEventListener('click', handleClickPaletteOne);
@@ -50,13 +47,17 @@ paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
 
 
-
-
-
-function resetForm() {
+function resetCard() {
+  articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
+  //dataForm[inputId] = event.target.value;
   
-  wholeForm.reset();
-  articleDesign.reset();
 }
-resetButton.addEventListener("click", resetForm);
+
+
+function reset() {
+
+  wholeForm.reset();
+  resetCard();
+}
+resetButton.addEventListener("click", reset);
 
