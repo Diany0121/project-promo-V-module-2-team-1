@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/153e998e96.js" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="./assets/main-05f132e8.css">
+</head>
+
+<body>
+    <header class=" header2">
+
+    
+    <a href="../index.html">
+        <img class=" header2__logo2" src="./images/logo-awesome-profile-cards.svg" alt="logo">
+    </a>
+
+</header>
+    <main>
+        <div class="second-main">
+     <section class="cards">
+    <button class="cards__button js_reset_btn">
+        <i class="fa-regular fa-trash-can cards__button--icon"></i>
+        Reset
+    </button>
+
+    <article class="design js-designCards">
+        <div class="design__float">
+            <h4 class="design__float--name js-name js-name-card">Nombre Apellido</h4>
+            <p class="design__float--job js-job js-job-card">Front-end developer</p>
+        </div>
+
+        <div class="design__img js-img-card "></div>
+
+        <nav class="nav">
+            <ul class="nav__icon">
+                <li class="nav__icon--items">
+                    <a href="#" class="nav__icon--link js-phone-card" target="_blank">
+                        <i class="fa-solid fa-mobile-screen-button nav__icon--phone"></i>
+                    </a>
+                </li>
+                <li class="nav__icon--items">
+                    <a href="#" class="nav__icon--link js-mail-card" target="_blank">
+                        <i class="fa-regular fa-envelope nav__icon--email"></i>
+                    </a>
+                </li>
+                <li class="nav__icon--items">
+                    <a href="#" class="nav__icon--link js-linkedin-card" target="_blank">
+                        <i class="fa-brands fa-linkedin-in nav__icon--linkedl"></i>
+                    </a>
+                </li>
+                <li class="nav__icon--items">
+                    <a href="#" class="nav__icon--link js-git-card" target="_blank">
+                        <i class="fa-brands fa-github-alt nav__icon--git"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </article>
+</section>
+        <form action="#" method="post" target="_blank" class="wholeForm">
+            <fieldset class="fieldset">
+  <section class="fieldset__legend">
+    <div class="fieldset__legend--div">
+    <i class="fa-regular fa-object-ungroup fieldset__legend--keyboard"></i>
+    <h3 class="fieldset__legend--title">Diseña</h3>
+    </div>
+    <div class="js-iconDesign">
+      <i class="fa-solid fa-angle-up fieldset__legend--arrowupDesign arrow" style="color: #54585A;"></i>
+      <i class="fa-solid fa-angle-down fieldset__legend--arrowDownDesign arrow" style="color: #54585A;"></i>
+    </div>
+  </section>
+
+  <section class="form__design--colors">
+    <p class="form__design--title">Colores</p>
+
+    <div class="form__design--range js-designPalette">
+      <div class="form__design">
+        <label for="radioOne" class="form__design--label"></label>
+        <input type="radio" name="palette" id="radioOne" class="form__design--input js-paletteOne" value="1" />
+        <div class="form__design--p1c1 form__design--boxColor"></div>
+        <div class="form__design--p1c2 form__design--boxColor"></div>
+        <div class="form__design--p1c3 form__design--boxColor"></div>
+      </div>
+
+      <div class="form__design">
+        <label for="radiusTwo" class="form__design--label"></label>
+        <input type="radio" name="palette" id="radiusTwo" class="form__design--input js-paletteTwo" value="2" />
+        <div class="form__design--p2c1 form__design--boxColor"></div>
+        <div class="form__design--p2c2 form__design--boxColor"></div>
+        <div class="form__design--p2c3 form__design--boxColor"></div>
+      </div>
+
+      <div class="form__design">
+        <label for="radiusThree" class="form__design--label"></label>
+        <input type="radio" name="palette" id="radiusThree" class="form__design--input js-paletteThree" value="3"/>
+        <div class="form__design--p3c1 form__design--boxColor"></div>
+        <div class="form__design--p3c2 form__design--boxColor"></div>
+        <div class="form__design--p3c3 form__design--boxColor"></div>
+      </div>
+    </div>
+  </section>
+</fieldset>
+</section>
+            <fieldset class="fieldset">
+    <section class="fieldset__legend">
+        <div class="fieldset__legend--div">
+            <i class="fa-regular fa-keyboard fieldset__legend--keyboard"></i>
+            <h3 class="fieldset__legend--title">Rellena</h3>
+        </div>
+        <div class="js-iconForm">
+            <i class="fa-solid fa-angle-up fieldset__legend--arrowupForm arrow" style="color: #54585A;"></i>
+            <i class="fa-solid fa-angle-down fieldset__legend--arrowDownForm arrow" style="color: #54585A;"></i>
+        </div>
+    </section>
+
+    <div class="boxToBeHidden js-form">
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="name">Nombre completo</label>
+            <input 
+              class="fieldset__sticker--input js-name-form"
+              id="name"
+              name="name"
+              placeholder="Ej: Sally Jill" type="text">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="job">Puesto</label>
+            <input 
+              class="fieldset__sticker--input js-job-form" 
+              id="job" 
+              name="job" 
+              placeholder="Ej: Front-end unicorn"  
+              type="text">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="file">Imagen de perfil</label>
+            <label class="fieldset__sticker--addImg" for="file">
+                <div class="fieldset__sticker--butt ">Añadir imagen</div>
+                <input 
+                class="fieldset__sticker--file js-btn" 
+                name="picture" 
+                type="file" 
+                id="file">
+                <div class="fieldset__sticker--div js-profile-preview"></div>
+            </label>
+
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="email">Email</label>
+            <input 
+              class="fieldset__sticker--input js-mail-form" 
+              id="email" 
+              name="email" 
+              placeholder="Ej: sally.hill@gmail.com"
+              type="email">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label " for="phone">Teléfono</label>
+            <input 
+              class="fieldset__sticker--input js-phone-form" 
+              id="phone" name="phone" 
+              placeholder="Ej: 555-55-55-55" 
+              type="tel"
+              value="">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label " for="linkedin">Linkedin</label>
+            <input 
+              class="fieldset__sticker--input js-linkedin-form" 
+              id="linkedin" name="linkedin" 
+              placeholder="Ej: sally-hill" 
+              type="text">
+        </div>
+        <div class="fieldset__sticker">
+            <label class="fieldset__sticker--label" for="gitHub">GitHub</label>
+            <input 
+              class="fieldset__sticker--input js-git-form" 
+              id="gitHub" name="gitHub" 
+              placeholder="Ej: sally-hill" 
+              type="text">
+        </div>
+    </div>
+</fieldset>
+            <fieldset class="fieldset">
+  <section class="fieldset__legend">
+    <div class="fieldset__legend--div">
+    <i class="fa-solid fa-share-nodes fieldset__legend--keyboard"></i>
+    <h3 class="fieldset__legend--title">Comparte</h3>
+    </div>
+    <div class="js-iconShare">
+      <i class="fa-solid fa-angle-up fieldset__legend--arrowupShare arrow" style="color: #54585A;"></i>
+      <i class="fa-solid fa-angle-down fieldset__legend--arrowDownShare arrow" style="color: #54585A;"></i>
+    </div>
+  </section>
+  <div class="fieldset__boxcontent">
+    <button class="fieldset__boxcontent--buttonone js-buttoncreate">
+      <i class="fa-solid fa-id-card"></i>
+      <p>crear tarjeta</p>
+    </button>
+    <div class=" fieldset__createdcard js-createdcard">
+      <h4 class="fieldset__createdcard--title">La tarjeta ha sido creada:</h4>
+      <p class="fieldset__createdcard--url">https://awesome-profile-card.com?id=A456DF0001</p>
+      <button class="fieldset__createdcard--buttontwo">
+        <i class="fa-brands fa-x-twitter"></i>
+        <p>compartir en X</p>
+      </button>
+    </div>
+  </div>
+</fieldset>
+        </form> 
+    </div>
+    </main>
+    <footer class="footer">
+  <p class="footer__awesome">Awesome profile-cards @2023</p>
+
+  <img class="footer__logo" src="./images/logo-adalab.png" alt="logo adalab" />
+</footer>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
