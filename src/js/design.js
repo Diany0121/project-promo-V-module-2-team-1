@@ -32,7 +32,7 @@ function handleClickPaletteOne () {
   articleDesign.classList.remove('paletteTwo', 'paletteThree');
 };
 
-function handleClickPaletteTwo (event){
+function handleClickPaletteTwo (){
   articleDesign.classList.add('paletteTwo');
   articleDesign.classList.remove('paletteOne', 'paletteThree');
 };
