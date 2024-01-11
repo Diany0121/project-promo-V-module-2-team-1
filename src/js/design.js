@@ -1,7 +1,7 @@
 "use strict";
 
 // ARROW
-const iconDesign = document.querySelector(".js-iconDesign");
+const iconDesign = document.querySelector(".js-fieldset__legend");
 const arrowUpDesign = document.querySelector(".fieldset__legend--arrowupDesign");
 const arrowDownDesign = document.querySelector(".fieldset__legend--arrowDownDesign");
 const boxDesign = document.querySelector(".form__design--colors");
