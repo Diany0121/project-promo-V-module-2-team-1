@@ -3,6 +3,7 @@ import './form.js';
 import './share.js';
 import './get_avatar.js';
 import './linkNav.js';
+import './colapsables.js';
 
 // RESET
 
