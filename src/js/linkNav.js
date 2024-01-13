@@ -25,7 +25,7 @@ function handlePhone () {
 phoneForm.addEventListener('input', handlePhone);
    
 function handleLinkedin () {
-    linkedinCard.href = `https://www.linkedin.com/:${linkedinForm.value}`; 
+    linkedinCard.href = `https://www.linkedin.com/in/${linkedinForm.value}`; 
    };
 linkedinForm.addEventListener('input', handleLinkedin);
 
