@@ -51,3 +51,4 @@ function writeJob(event) {
 
 nameForm.addEventListener("input", writeName);
 jobForm.addEventListener("input", writeJob);
+
