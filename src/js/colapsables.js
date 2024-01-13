@@ -40,18 +40,6 @@ function renderClick (event) {
     boxShareOpen();   
   }
 }
-// function renderClick (event) {
-//   const containerCollapse = event.currentTarget;
-//   console.log(containerCollapse);
-//   if (containerCollapse.classList.contains('js-design')) {
-//     boxDesignClose();
-//     boxFormOpen();
-    
-//   } else {
-//     boxDesignOpen();
-//     boxFormClose();
-//   }
-// }
 
 // boxDesign close
 function boxDesignClose () {
