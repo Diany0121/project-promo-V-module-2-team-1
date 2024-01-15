@@ -1,69 +1,74 @@
 // ARROW-Desing
 const iconDesign = document.querySelector(".js-fieldset__legend");
-const arrowUpDesign = document.querySelector(".fieldset__legend--arrowupDesign");
-const arrowDownDesign = document.querySelector( ".fieldset__legend--arrowDownDesign");
+const arrowUpDesign = document.querySelector(
+  ".fieldset__legend--arrowupDesign"
+);
+const arrowDownDesign = document.querySelector(
+  ".fieldset__legend--arrowDownDesign"
+);
 const boxDesign = document.querySelector(".form__design--colors");
 
-
-
 arrowDownDesign.classList.add("hidden");
-function handleClickDesign() {
-  boxDesign.classList.toggle("hidden");
+function clickDesign() {
   arrowUpDesign.classList.toggle("hidden");
   arrowDownDesign.classList.toggle("hidden");
+  boxDesign.classList.remove("hidden");
+  boxForm.classList.add("hidden");
+  boxShare.classList.add("hidden");
 }
-iconDesign.addEventListener("click", handleClickDesign);
+
+iconDesign.addEventListener("click", collapse);
 
 // ARROW-form
 const iconForm = document.querySelector(".js-fieldsetLegendForm");
 const arrowUpForm = document.querySelector(".fieldset__legend--arrowupForm");
-const arrowDownForm = document.querySelector(".fieldset__legend--arrowDownForm");
+const arrowDownForm = document.querySelector(
+  ".fieldset__legend--arrowDownForm"
+);
 const boxForm = document.querySelector(".boxToBeHidden");
 
 boxForm.classList.add("hidden");
 arrowUpForm.classList.add("hidden");
-function handleClick(box, arrowUp, arrowDown) {
-  box.classList.toggle("hidden");
-  arrowUp.classList.toggle("hidden");
-  arrowDown.classList.toggle("hidden");
+
+function clickForm() {
+  arrowUpForm.classList.toggle("hidden");
+  arrowDownForm.classList.toggle("hidden");
+  boxDesign.classList.add("hidden");
+  boxForm.classList.remove("hidden");
+  boxShare.classList.add("hidden");
 }
-iconForm.addEventListener("click", function () {
-  handleClick(boxForm, arrowUpForm, arrowDownForm);
-});
+iconForm.addEventListener("click", collapse);
 
 // ARROW-Share
 
 const iconShare = document.querySelector(".js-fieldsetLegendShare");
 const arrowUpShare = document.querySelector(".fieldset__legend--arrowupShare");
-const arrowDownShare = document.querySelector( ".fieldset__legend--arrowDownShare");
+const arrowDownShare = document.querySelector(
+  ".fieldset__legend--arrowDownShare"
+);
 const boxShare = document.querySelector(".fieldset__boxcontent");
 
 boxShare.classList.add("hidden");
 arrowUpShare.classList.add("hidden");
-function handleClickShare() {
-  boxShare.classList.toggle("hidden");
+
+function clickShare() {
   arrowUpShare.classList.toggle("hidden");
   arrowDownShare.classList.toggle("hidden");
+  boxDesign.classList.add("hidden");
+  boxForm.classList.add("hidden");
+  boxShare.classList.remove("hidden");
 }
-iconShare.addEventListener("click", handleClickShare);
 
+iconShare.addEventListener("click", collapse);
 
-// function newfuncion () {
-// if(handleClickDesign){
-//     boxDesign.classList.remove ('hidden');
-//     boxForm.classList.add ('hidden');
-//     boxShare.classList.add('hidden');  
-//  } else if (handleClick){
-//     boxDesign.classList.add ('hidden');
-//     boxForm.classList.remove ('hidden');
-//     boxShare.classList.add('hidden'); 
-//  } else if (handleClickShare){
-//     boxDesign.classList.add ('hidden');
-//     boxForm.classList.add ('hidden');
-//     boxShare.classList.remove('hidden'); 
-//  }
-
-//  }
-
-//  newfuncion();
-
+function collapse(event) {
+  const containerCollapse = event.currentTarget;
+  console.log(containerCollapse);
+  if (containerCollapse.classList.contains("js-design")) {
+    clickDesign();
+  } else if (containerCollapse.classList.contains("js-form")) {
+    clickForm();
+  } else if (containerCollapse.classList.contains("js-share")) {
+    clickShare();
+  }
+}
