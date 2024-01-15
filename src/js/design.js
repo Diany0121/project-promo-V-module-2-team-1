@@ -40,6 +40,19 @@ function resetCard() {
   articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
   //dataForm[inputId] = event.target.value;
   
+  //dataForm.name= ''; // tambien funciona para el reset 
+  //dataForm.job= '';
+
+  for (const dato in dataForm) {
+    dataForm[dato]= '';
+  }
+
+  profileName.innerHTML = 'Nombre Apellido';
+  profileJob.innerHTML = 'Front-end developer';
+  //phoneCard.value = '';
+  //emailCard.innerHTML = '';
+  //linkedinCard.innerHTML= '';
+  //gitCard.innerHTML= '';
 }
 
 
