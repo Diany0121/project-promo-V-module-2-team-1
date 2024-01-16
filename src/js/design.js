@@ -41,6 +41,10 @@ paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
 function resetCard() {
   articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
   //dataForm[inputId] = event.target.value;
+
+  //dataForm.name= ''; // tambien funciona para el reset 
+  //dataForm.job= '';
+
 }
 
 
