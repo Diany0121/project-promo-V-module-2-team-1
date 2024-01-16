@@ -46,7 +46,6 @@ function resetCard() {
   for (const dato in dataForm) {
     dataForm[dato]= '';
   }
-
   profileName.innerHTML = 'Nombre Apellido';
   profileJob.innerHTML = 'Front-end developer';
   //phoneCard.value = '';
