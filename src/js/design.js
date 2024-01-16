@@ -40,6 +40,7 @@ function resetCard() {
   articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
   //dataForm[inputId] = event.target.value;
   
+  
 }
 
 
