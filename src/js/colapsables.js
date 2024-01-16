@@ -32,7 +32,6 @@ function renderClick (event) {
     boxDesignClose();
     boxFormOpen();
     boxShareClose();  
-
     
   } else if (containerCollapse.classList.contains('js-share')) {
     boxDesignClose();
@@ -40,7 +39,6 @@ function renderClick (event) {
     boxShareOpen();   
   }
 }
-
 // boxDesign close
 function boxDesignClose () {
   arrowUpDesign.classList.add('hidden');
