@@ -3,7 +3,7 @@
 const buttonShare = document.querySelector('.js-buttoncreate');
 const createdCard = document.querySelector('.js-createdcard');
 createdCard.classList.add('hidden');
-
+/*
 function handleShare(event) {
   event.preventDefault();
   fetch('https://dev.adalab.es/api/card/', {
@@ -16,7 +16,7 @@ function handleShare(event) {
       console.log(data);
     });
 }
-buttonShare.addEventListener('click', handleShare);
+buttonShare.addEventListener('click', handleShare); */
 
 function handleclickbutton(event) {
   event.preventDefault();
