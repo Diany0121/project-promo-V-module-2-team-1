@@ -32,7 +32,6 @@ arrowUpForm.classList.add("hidden");
 
 function clickForm() {
   arrowUpForm.classList.toggle("hidden");
-  arrowDownForm.classList.toggle("hidden");
   boxDesign.classList.add("hidden");
   boxForm.classList.remove("hidden");
   boxShare.classList.add("hidden");
