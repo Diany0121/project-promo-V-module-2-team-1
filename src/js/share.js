@@ -22,6 +22,23 @@ function handleclickbutton(event) {
   event.preventDefault();
   createdCard.classList.toggle('hidden');
   buttonShare.classList.toggle('backgroundgrey');
+
+
+// aqui voy a poner la petición al servidor
+fetch ('https://dev.adalab.es/api/card/' {
+  method: "POST",
+  body: JSON.stringify(dataForm),
+  headers: {'Content-type': "application/json"}
+}).then((response) => response.json())
+.then (data => {
+
+});
+
+
+
 }
 
 buttonShare.addEventListener('click', handleclickbutton);
+
+
+
