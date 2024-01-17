@@ -10,7 +10,7 @@ const formContainer = document.querySelector('.js-form-container');
 
 // ESTO ES PARA TENER LOS DATOS Q METE EL USUARIO EN EL OBJETO QUE LUEGO IRA A LA API
 const dataForm = {
-  palette: 1,
+  palette: '',
   name: '',
   job: '',
   phone: '',
