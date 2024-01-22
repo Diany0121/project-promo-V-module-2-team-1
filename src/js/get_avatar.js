@@ -31,6 +31,8 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  // eslint-disable-next-line no-undef
+  dataForm.photo = fr.result;
 }
 
 /**

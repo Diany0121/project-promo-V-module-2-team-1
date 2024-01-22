@@ -21,13 +21,24 @@
       <p>crear tarjeta</p>
     </button>
 
-    <div class="fieldset__createdcard">
-      <h4 class="fieldset__createdcard--title js-createdcard"></h4>
-      <p class="fieldset__createdcard--url js-linkCard">href=""</p>
-      <button class="fieldset__createdcard--buttontwo">
+    <div class="fieldset__createdcard js-createdcard hidden">
+      <h4 class="fieldset__createdcard--title">La tarjeta ha sido creada:</h4>
+      <a
+        href=""
+        target="_blank"
+        class="fieldset__createdcard--url js-linkCard"
+      ></a>
+      <a
+        target="_blank"
+        class="twitter-share-button js-twitter-button fieldset__createdcard--buttontwo"
+        href="https://twitter.com/intent/tweet?text="
+      >
         <i class="fa-brands fa-x-twitter"></i>
         <p>compartir en X</p>
-      </button>
+      </a>
+    </div>
+    <div class="fieldset__errorcard js-errorcard hidden">
+      <h4 class="js-errorcard-title"></h4>
     </div>
   </div>
 </fieldset>
