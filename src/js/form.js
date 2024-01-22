@@ -1,5 +1,4 @@
 'use strict';
-
 // INTRODUCIR DATOS
 const nameCard = document.querySelector('.js-name-card');
 const nameForm = document.querySelector('.js-name-form');
@@ -12,7 +11,7 @@ const formContainer = document.querySelector('.js-form-container');
 
 // ESTO ES PARA TENER LOS DATOS Q METE EL USUARIO EN EL OBJETO QUE LUEGO IRA A LA API
 const dataForm = {
-  palette: 1,
+  palette: '',
   name: '',
   job: '',
   phone: '',
@@ -41,7 +40,7 @@ const handleForm = (event) => {
   //   dataForm.linkedin = event.target.value;
   // } else if (inputId === 'github') {
   //   dataForm.github = event.target.value;
-  // } else if (inputId === 'pho') {
+  // } else if (inputId === 'photo') {
   //   dataForm.photo = writeImage(); // falta la foto y el url,paleta aqui.
   // }
 };
