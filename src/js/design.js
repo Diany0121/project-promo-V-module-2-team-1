@@ -18,7 +18,7 @@ function handleClickPaletteOne() {
   articleDesign.classList.remove('paletteTwo', 'paletteThree');
 }
 
-function handleClickPaletteTwo (event){
+function handleClickPaletteTwo(event) {
   articleDesign.classList.add('paletteTwo');
   articleDesign.classList.remove('paletteOne', 'paletteThree');
 }
@@ -31,6 +31,8 @@ function handleClickPaletteThree() {
 paletteRadiusOne.addEventListener('click', handleClickPaletteOne);
 paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
+
+
 
 
 // Boton de Reset
