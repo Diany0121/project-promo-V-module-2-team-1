@@ -28,6 +28,7 @@ const handleForm = (event) => {
   dataForm[inputName] = event.target.value; //CON dataForm ENTRO EN LA PROPIEDAD [--inputId--] y con target.value cojo el valor
   console.log(inputName); //para comprobar q la info entra
   console.log(dataForm); //para comprobar que la info entra donde debe
+
   // if (inputId === 'name') {
   //   dataForm.name = event.target.value;
   // } else if (inputId === 'job') {
