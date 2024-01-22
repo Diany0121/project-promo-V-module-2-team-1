@@ -1,4 +1,4 @@
-# Creación de Tarjetas Personalizadas de Trabajo
+# Awesome Profile-cards
 
 ## Descripción
 
@@ -8,29 +8,30 @@ Bienvenido a la aplicación de creación de tarjetas personalizadas de trabajo. 
 
 - **Diseño Personalizado:** Crea tarjetas con un diseño único que refleje tu personalidad y habilidades.
 - **Fácil de Usar:** Interfaz intuitiva que facilita la creación y personalización de tarjetas.
-- **Comparte tu Tarjeta:** Una vez creada, puedes compartir tu tarjeta profesional con otras personas.
+- **Comparte tu Tarjeta:** Una vez creada, puedes compartir tu tarjeta profesional con otras personas y en Twiter.
 
 ## Instrucciones de Uso
 
-1. Accede a la página principal de la aplicación: [http://localhost:5175/card.html](http://localhost:5175/card.html).
-2. Llena el formulario con la información que deseas incluir en tu tarjeta.
+1. Accede a la página principal de la aplicación: (https://avispas.github.io/project-promo-V-module-2-team-1/)
+2. Llena el formulario con la información solicitada.
 3. Haz clic en el botón de creación para generar tu tarjeta personalizada.
 4. ¡Comparte tu tarjeta con tus contactos profesionales y destaca tu perfil laboral!
 
 ## Guía de inicio rápido
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+## Cómo Usar
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+1. Clona el repositorio o descarga el código.
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+   ```bash
+   https://github.com/Avispas/project-promo-V-module-2-team-1.git
+   ```
+
+2. El proyecto hay que arrancarlo cada vez que te pongas a programar. Para ello ejecuta el comando:
+
+```bash
+npm run dev
+```
 
 ## Requisitos
 
@@ -41,7 +42,7 @@ Bienvenido a la aplicación de creación de tarjetas personalizadas de trabajo. 
 - HTML5
 - CSS3
 - JavaScript
-- Fetch API (para la comunicación con el servidor)
+- Fetch API ('https://dev.adalab.es/api/card/')
 
 ## Autor
 
@@ -50,10 +51,14 @@ Bienvenido a la aplicación de creación de tarjetas personalizadas de trabajo. 
 - Angela
 - Nadine Estrella
 
+## Contribuir
+
+¡Contribuciones son bienvenidas! Si encuentras algún error o tienes ideas para mejorar el proyecto, siéntete libre de abrir un issue o enviar un pull request.
+
 ## Licencia
 
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+Este proyecto ha sido desarrollado por las autoras para para Adalab.
+
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
 ---
-
-**Nota:** Asegúrate de tener el servidor local ejecutándose correctamente antes de acceder a la aplicación.
