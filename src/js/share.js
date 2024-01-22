@@ -1,9 +1,11 @@
 'use strict';
-const buttonShare = document.querySelector('.js-buttoncreate');
-const createdCard = document.querySelector('.js-createdcard');
+const createBtn = document.querySelector('.js-createBtn'); //boton crear naranja
+const createdCard = document.querySelector('.js-createdcard'); //ya creado
+const linkCard = document.querySelector('.js-linkCard');
 createdCard.classList.add('hidden');
 
 function handleShare(event) {
+  //esto postea lo la usuaria ha metido
   event.preventDefault();
   console.log(dataForm);
   fetch('https://dev.adalab.es/api/card/', {
@@ -17,12 +19,44 @@ function handleShare(event) {
       renderButton();
     });
 }
-buttonShare.addEventListener('click', handleShare);
 
-function renderButton() {
-  createdCard.classList.toggle('hidden');
-  buttonShare.classList.toggle('backgroundgrey');
+createBtn.addEventListener('click', handleShare); //esto devuelve un objeto
+
+const finalCard = {
+  success: '',
+  cardURL: '',
+};
+
+function renderButton(results) {
+  for (let result in finalCard) {
+    if (results.success) {
+      // Si el evento es exitoso
+      linkCard.href = result.cardURL;
+      linkCard.innerHTML = result.cardURL;
+      createBtn.disabled = true;
+      createdCard.innerHTML = 'La tarjeta ha sido creada: ';
+    } else {
+      // Si el evento no es exitoso
+      createdCard.innerHTML =
+        'Error: revisa los datos introducidos y haz click de nuevo en Crear Tarjeta';
+      createBtn.disabled = false;
+      createBtn.classList.remove('backgroundgrey');
+    }
+    createdCard.classList.toggle('hidden');
+    createBtn.classList.toggle('backgroundgrey');
+  }
 }
+
+/*
+const responseObject = {
+  success: true,
+  cardURL: 'https://dev.adalab.es/card/17059309836014204',
+};
+
+// Acceder a la URL mediante la notación de punto
+const url = responseObject.cardURL;
+
+console.log(url); // Imprimirá "https://dev.adalab.es/card/17059309836014204"
 
 // buttonShare.addEventListener('click', handleclickbutton);
 
