@@ -38,6 +38,7 @@ function renderShare(cardURL) {
   linkCard.setAttribute('href', cardURL);
   // 2. cambiar el contenido del link
   linkCard.innerHTML = cardURL;
+  createBtn.classList.add('backgroundgrey');
   // 3. cambiar el texto de twitter
   const twitterButton = document.querySelector('.js-twitter-button');
   const twitterHref = twitterButton.getAttribute('href');
