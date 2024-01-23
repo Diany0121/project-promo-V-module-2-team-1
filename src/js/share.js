@@ -29,6 +29,7 @@ function handleShare(event) {
         renderError(result.error);
       }
     });
+  setInLocalStorage();
 }
 
 createBtn.addEventListener('click', handleShare); //esto devuelve un objeto
@@ -49,6 +50,13 @@ function renderShare(cardURL) {
   // 4. quitar la clase hidden de share
   createdCard.classList.remove('hidden');
 }
+
+//LOCAL STORAGE
+
+const setInLocalStorage = () => {
+  const stringifyCard = JSON.stringify(dataForm); //guardo la variable
+  localStorage.setItem('AwesomeCard', stringifyCard); //favorites es la clave y stringigy es el valor.
+};
 
 function renderError(errorMessage) {
   // 1. añadir el error a el titulo

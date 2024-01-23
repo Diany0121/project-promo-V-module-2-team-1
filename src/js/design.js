@@ -32,8 +32,6 @@ paletteRadiusOne.addEventListener('click', handleClickPaletteOne);
 paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
 
-
-
 function resetCard() {
   articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
   //dataForm[inputId] = event.target.value;
@@ -57,5 +55,7 @@ function resetCard() {
 function reset() {
   wholeForm.reset();
   resetCard();
+
+  localStorage.removeItem('AwesomeCard');
 }
 resetButton.addEventListener('click', reset);
