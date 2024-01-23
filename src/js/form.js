@@ -26,24 +26,6 @@ const dataForm = {
 const handleForm = (event) => {
   const inputName = event.target.name; //DA EL VALOR QUE TIENE LOS INPUT EN EL VALOR ID, QUE SERA EL OBJETO
   dataForm[inputName] = event.target.value; //CON dataForm ENTRO EN LA PROPIEDAD [--inputId--] y con target.value cojo el valor
-  console.log(inputName); //para comprobar q la info entra
-  console.log(dataForm); //para comprobar que la info entra donde debe
-
-  // if (inputId === 'name') {
-  //   dataForm.name = event.target.value;
-  // } else if (inputId === 'job') {
-  //   dataForm.job = event.target.value;
-  // } else if (inputId === 'phone') {
-  //   dataForm.phone = event.target.value;
-  // } else if (inputId === 'email') {
-  //   dataForm.email = event.target.value;
-  // } else if (inputId === 'linkedin') {
-  //   dataForm.linkedin = event.target.value;
-  // } else if (inputId === 'github') {
-  //   dataForm.github = event.target.value;
-  // } else if (inputId === 'photo') {
-  //   dataForm.photo = writeImage(); // falta la foto y el url,paleta aqui.
-  // }
 };
 
 formContainer.addEventListener('input', handleForm);

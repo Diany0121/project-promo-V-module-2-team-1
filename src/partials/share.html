@@ -16,18 +16,29 @@
     </div>
   </section>
   <div class="fieldset__boxcontent">
-    <button class="fieldset__boxcontent--buttonone js-buttoncreate">
+    <button class="fieldset__boxcontent--buttonone js-createBtn">
       <i class="fa-solid fa-id-card"></i>
       <p>crear tarjeta</p>
     </button>
 
-    <div class="fieldset__createdcard js-createdcard">
+    <div class="fieldset__createdcard js-createdcard hidden">
       <h4 class="fieldset__createdcard--title">La tarjeta ha sido creada:</h4>
-      <p class="fieldset__createdcard--url js-linkCard">href=""</p>
-      <button class="fieldset__createdcard--buttontwo">
+      <a
+        href=""
+        target="_blank"
+        class="fieldset__createdcard--url js-linkCard"
+      ></a>
+      <a
+        target="_blank"
+        class="twitter-share-button js-twitter-button fieldset__createdcard--buttontwo"
+        href="https://twitter.com/intent/tweet?text="
+      >
         <i class="fa-brands fa-x-twitter"></i>
-        <p>compartir en X</p>
-      </button>
+        <p>Comparte</p>
+      </a>
+    </div>
+    <div class="fieldset__errorcard js-errorcard hidden">
+      <h4 class="js-errorcard-title"></h4>
     </div>
   </div>
 </fieldset>
