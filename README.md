@@ -46,9 +46,9 @@ npm run dev
 
 ## Autor
 
-- Angela
-- Dyani
-- Angela
+- Angela Avila
+- Dianelys Martinez
+- Gabriela Pinto
 - Nadine Estrella
 
 ## Contribuir
