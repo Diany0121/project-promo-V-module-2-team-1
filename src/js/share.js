@@ -74,20 +74,22 @@ function getFromLocalStorage() {
     return null;
   }
 }
-
-// ... (Resto del código)
-
 // Ejemplo de cómo usar la función
 const storedData = getFromLocalStorage();
 if (storedData) {
   // Hacer algo con los datos recuperados, por ejemplo:
   profileName.innerHTML = storedData.name || "Nombre Apellido";
   profileJob.innerHTML = storedData.job || "Front-end developer";
+  //profileImage.url = storedData.photo || "url(${fr.result})";
 
-  // profileImage.style.backgroundImage =
-  //   storedData.photo || `url("../images/valentina.jpg")`;
-  // profilePreview.style.backgroundImage =
-  //   storedData.style || `url("../images/valentina.jpg")`;
+  profileImage.style.backgroundImage = `url(${storedData.photo})` || "url(placeholder.jpg)";
+
+  profilePreview.style.backgroundImage = `url(${storedData.photo})` || "url(placeholder.jpg)";
+
+  phoneCard.href = `tel:${storedData.value}`; 
+  emailCard.href = `mailto:${storedData.value}`;
+  linkedinCard.href = `https://www.linkedin.com/in/${storedData.value}`;
+  gitCard.href = `https://github.com/${storedData.value}`;
 
   if (storedData.palette === "1") {
     handleClickPaletteOne();
@@ -96,12 +98,4 @@ if (storedData) {
   } else if (storedData.palette === "3") {
     handleClickPaletteThree();
   }
-
-  // if (storedData.photo) {
-  //   profileImage = `url(${storedData.photo})`;
-  //   profilePreview = `url(${storedData.photo})`;
-  // } else {
-  //   profileImage.style.backgroundImage = 'url("../images/valentina.jpg")';
-  //   profilePreview.style.backgroundImage = 'url("../images/valentina.jpg")';
-  // }
 }
