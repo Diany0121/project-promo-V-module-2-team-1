@@ -44,8 +44,8 @@ function resetCard() {
   }
   profileName.innerHTML = 'Nombre Apellido';
   profileJob.innerHTML = 'Front-end developer';
-  profileImage.style.backgroundImage = `url("../images/imgCards.jpg")`;
-  profilePreview.style.backgroundImage = `url("../images/imgCards.jpg")`;
+  profileImage.style.backgroundImage = `url("../images/valentina.jpg")`;
+  profilePreview.style.backgroundImage = `url("../images/valentina.jpg")`;
   phoneCard.href = `tel:`;
   emailCard.href = `mailto:`;
   linkedinCard.href = `https://www.linkedin.com/`;
