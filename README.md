@@ -46,10 +46,10 @@ npm run dev
 
 ## Autor
 
-- Angela Avila Lasanta
-- Dianelys Martinez Del Toro
-- Gabriela Pinto Vasquez
-- Nadine Estrella Vacas
+- Angela Avila 
+- Dianelys Martinez
+- Gabriela Pinto 
+- Nadine Estrella
 
 ## Contribuir
 
