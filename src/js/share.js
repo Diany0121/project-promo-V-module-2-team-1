@@ -1,45 +1,107 @@
-//boton naranja/gris y ocualtar seccion
-
-const buttonShare = document.querySelector('.js-buttoncreate');
-const createdCard = document.querySelector('.js-createdcard');
-createdCard.classList.add('hidden');
+"use strict";
+const createBtn = document.querySelector(".js-createBtn"); //boton crear naranja
+const createdCard = document.querySelector(".js-createdcard"); //ya creado
+const linkCard = document.querySelector(".js-linkCard");
+const errorCard = document.querySelector(".js-errorcard");
+const errorCardTitle = document.querySelector(".js-errorcard-title");
 
 function handleShare(event) {
+  //esto postea lo la usuaria ha metido
   event.preventDefault();
-  console.log(dataForm);
-  fetch('https://dev.adalab.es/api/card/', {
-    method: 'POST',
+
+  fetch("https://dev.adalab.es/api/card/", {
+    method: "POST",
+    // eslint-disable-next-line no-undef
     body: JSON.stringify(dataForm),
-    headers: { 'Content-type': 'application/json' },
+    headers: { "Content-type": "application/json" },
   })
     .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      renderButton ();
+    .then((result) => {
+      createdCard.classList.add("hidden");
+      errorCard.classList.add("hidden");
+      // api devuelve estos datos en caso de que todo vaya bien
+      // { success: true, cardURL: 'https://dev.adalab.es/card/17059446533996460' }
+      if (result.success === true) return renderShare(result.cardURL);
+
+      if (result.error.includes("ER_DATA_TOO_LONG")) {
+        renderError("La imagen es muy grande");
+      } else {
+        renderError(result.error);
+      }
     });
-   
-    
-}
-buttonShare.addEventListener('click', handleShare); 
-
-function renderButton() {
-  
-  createdCard.classList.toggle('hidden');
-  buttonShare.classList.toggle('backgroundgrey');
-
-
-// aqui voy a poner la petición al servidor
-fetch ('https://dev.adalab.es/api/card/' {
-  method: "POST",
-  body: JSON.stringify(dataForm),
-  headers: {'Content-type': "application/json"}
-}).then((response) => response.json())
-.then (data => {
-
-});
-
-
-
+  setInLocalStorage();
 }
 
-buttonShare.addEventListener('click', handleclickbutton);
+createBtn.addEventListener("click", handleShare); //esto devuelve un objeto
+
+function renderShare(cardURL) {
+  // 1. cambiar el link
+  linkCard.setAttribute("href", cardURL);
+  // 2. cambiar el contenido del link
+  linkCard.innerHTML = cardURL;
+  createBtn.classList.add("backgroundgrey");
+  // 3. cambiar el texto de twitter
+  const twitterButton = document.querySelector(".js-twitter-button");
+  const twitterHref = twitterButton.getAttribute("href");
+  twitterButton.setAttribute(
+    "href",
+    twitterHref + encodeURIComponent(`Mira mi nueva tarjeta ${cardURL}`)
+  );
+  // 4. quitar la clase hidden de share
+  createdCard.classList.remove("hidden");
+}
+
+function renderError(errorMessage) {
+  // 1. añadir el error a el titulo
+  errorCardTitle.innerHTML = `Error! ${errorMessage}`;
+  // 2. eliminar clase hidden de error card
+  errorCard.classList.remove("hidden");
+}
+
+//LOCAL STORAGE
+
+const setInLocalStorage = () => {
+  const stringifyCard = JSON.stringify(dataForm);
+  localStorage.setItem("AwesomeCard", stringifyCard);
+};
+
+function getFromLocalStorage() {
+  const storedData = localStorage.getItem("AwesomeCard");
+  if (storedData) {
+    const parsedData = JSON.parse(storedData);
+    return parsedData;
+  } else {
+    return null;
+  }
+}
+
+// ... (Resto del código)
+
+// Ejemplo de cómo usar la función
+const storedData = getFromLocalStorage();
+if (storedData) {
+  // Hacer algo con los datos recuperados, por ejemplo:
+  profileName.innerHTML = storedData.name || "Nombre Apellido";
+  profileJob.innerHTML = storedData.job || "Front-end developer";
+
+  // profileImage.style.backgroundImage =
+  //   storedData.photo || `url("../images/valentina.jpg")`;
+  // profilePreview.style.backgroundImage =
+  //   storedData.style || `url("../images/valentina.jpg")`;
+
+  if (storedData.palette === "1") {
+    handleClickPaletteOne();
+  } else if (storedData.palette === "2") {
+    handleClickPaletteTwo();
+  } else if (storedData.palette === "3") {
+    handleClickPaletteThree();
+  }
+
+  // if (storedData.photo) {
+  //   profileImage = `url(${storedData.photo})`;
+  //   profilePreview = `url(${storedData.photo})`;
+  // } else {
+  //   profileImage.style.backgroundImage = 'url("../images/valentina.jpg")';
+  //   profilePreview.style.backgroundImage = 'url("../images/valentina.jpg")';
+  // }
+}

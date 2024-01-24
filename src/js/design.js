@@ -32,19 +32,31 @@ paletteRadiusOne.addEventListener('click', handleClickPaletteOne);
 paletteRadiusTwo.addEventListener('click', handleClickPaletteTwo);
 paletteRadiusThree.addEventListener('click', handleClickPaletteThree);
 
-
-
-
-// Boton de Reset
 function resetCard() {
   articleDesign.classList.remove('paletteOne', 'paletteTwo', 'paletteThree');
   //dataForm[inputId] = event.target.value;
-  
+
+  //dataForm.name= ''; // tambien funciona para el reset
+  //dataForm.job= '';
+
+  for (const dato in dataForm) {
+    dataForm[dato] = '';
+  }
+  profileName.innerHTML = 'Nombre Apellido';
+  profileJob.innerHTML = 'Front-end developer';
+  profileImage.style.backgroundImage = `url("../images/valentina.jpg")`;
+  profilePreview.style.backgroundImage = `url("../images/valentina.jpg")`;
+  phoneCard.href = `tel:`;
+  emailCard.href = `mailto:`;
+  linkedinCard.href = `https://www.linkedin.com/`;
+  gitCard.href = `https://github.com`;
 }
 
 
 function reset() {
   wholeForm.reset();
   resetCard();
+
+  localStorage.removeItem('AwesomeCard');
 }
 resetButton.addEventListener('click', reset);

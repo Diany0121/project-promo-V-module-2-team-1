@@ -1,54 +1,59 @@
 .fieldset {
-    &__sticker {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
+  &__sticker {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 
-        &--label {
-            font-family: $font-OpenSans;
-            font-size: 14px;
-            color: $color-dark-gree-blue;
-            padding-top: 10px;
-
-        }
-
-        &--input {
-            height: 30px;
-            font-family: $font-OpenSans;
-            font-size: 14px;
-            border: 1px solid $color-hospital-green;
-            padding-left: 9px;
-        }
-        &--addImg{
-            display: flex;
-            justify-content: space-between;            
-        }
-        &--butt{
-            background-color: $color-dull-orange;
-            height: 30px;
-            width: 140px;
-            border-radius: 3px;
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-            color: $color-white-two;
-            font-family: $font-OpenSans;
-            font-size: 14px;
-            text-align: center;
-            padding-top: 5px;            
-        }
-
-        &--file {
-            display: none;
-        }
-        &--div {
-            height: 30px;
-            width: 30px;
-            border: 1px solid $color-hospital-green;
-            background-size: cover;
-        }
-
+    &--label {
+      font-family: $font-OpenSans;
+      font-size: 14px;
+      color: $color-dark-gree-blue;
+      padding-top: 10px;
     }
 
+    &--input {
+      height: 30px;
+      font-family: $font-OpenSans;
+      font-size: 14px;
+      border: 1px solid $color-hospital-green;
+      padding-left: 9px;
+    }
+    &--addImg {
+      display: flex;
+      justify-content: space-between;
+    }
+    &--butt {
+      background-color: $color-dull-orange;
+      height: 30px;
+      width: 140px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      color: $color-white-two;
+      font-family: $font-OpenSans;
+      font-size: 14px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        background-color: $color-white-two;
+        color: $color-dull-orange;
+        border: 1px solid $color-dull-orange;
+      }
+    }
+
+    &--file {
+      display: none;
+    }
+    &--div {
+      height: 30px;
+      width: 30px;
+      border: 1px solid $color-hospital-green;
+      background-size: cover;
+    }
+  }
 }
 .hidden {
-    display: none;
+  display: none;
 }
