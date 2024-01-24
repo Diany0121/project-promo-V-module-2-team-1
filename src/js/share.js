@@ -80,12 +80,8 @@ if (storedData) {
   // Hacer algo con los datos recuperados, por ejemplo:
   profileName.innerHTML = storedData.name || "Nombre Apellido";
   profileJob.innerHTML = storedData.job || "Front-end developer";
-  //profileImage.url = storedData.photo || "url(${fr.result})";
-
   profileImage.style.backgroundImage = `url(${storedData.photo})` || "url(placeholder.jpg)";
-
   profilePreview.style.backgroundImage = `url(${storedData.photo})` || "url(placeholder.jpg)";
-
   phoneCard.href = `tel:${storedData.value}`; 
   emailCard.href = `mailto:${storedData.value}`;
   linkedinCard.href = `https://www.linkedin.com/in/${storedData.value}`;
