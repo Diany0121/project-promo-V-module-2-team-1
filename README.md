@@ -46,7 +46,7 @@ npm run dev
 
 ## Autor
 
-- Angela Avila 
+- Angela Avila
 - Dianelys Martinez
 - Gabriela Pinto 
 - Nadine Estrella
