@@ -55,6 +55,11 @@ npm run dev
 
 ¡Contribuciones son bienvenidas! Si encuentras algún error o tienes ideas para mejorar el proyecto, siéntete libre de abrir un issue o enviar un pull request.
 
+## Saber más
+
+- Presentación: https://view.genial.ly/65afec192e55750014d5c73d/presentation-awsome-profile-cards 
+
+
 ## Licencia
 
 Este proyecto ha sido desarrollado por las autoras para para Adalab.
